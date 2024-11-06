@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #c8e4cd;
+    overflow: hidden;
+}
+
+#textbox {
+    font-size: 24px;
+    font-family: "Atkinson Hyperlegible", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #469054;
+    border: none;
+    background: transparent;
+    height: 100%;
+    display: inline-block;
+}
+
+#textbox:empty::before {
+    content: "Type here";
+}
+
+#textbox::selection {
+    background-color: #80c18c;
+}  
+
+#textbox:focus {
+    outline: none;
+    border: none;
+}
